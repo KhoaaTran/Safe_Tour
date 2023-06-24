@@ -487,3 +487,152 @@ button {
     font-family: Inter;
     line-height: 1.42;
 }
+
+/* Trend */
+.trend {
+    margin-top: 140px;
+}
+
+.trend__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trend__controls {
+    display: flex;
+}
+
+.trend__control {
+    display: block;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #ececec;
+}
+
+.trend__icon {
+    color: #505050;
+}
+
+.trend__prev {
+    margin-right: 10px;
+}
+
+.trend__control:hover {
+    background: #ff7b29;
+    border: 1px solid #ff7b29;
+}
+
+.trend__control:hover .trend__icon {
+    color: #fff;
+}
+
+.trend__body {
+    margin-top: 55px;
+    display: flex;
+    overflow: hidden;
+    column-gap: 30px;
+}
+
+.trend__item {
+    flex-shrink: 0;
+    width: calc(33% - 15px);
+    padding: 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 16px;
+}
+
+.trend__item:hover {
+    background: #FFF;
+    box-shadow: 0px 40px 90px 0px rgba(0, 0, 0, 0.06);
+    border: none;
+}
+
+.trend__img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.trend__info {
+    margin-top: 9px;
+    padding: 9px;
+}
+
+.trend__heading {
+    color: #2d3134;
+    font-size: 2rem;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.trend__desc-wrap {
+    margin-top: 8px;
+    display: flex;
+}
+
+.trend__desc {
+    color: #8a8a8a;
+    font-size: 1.2rem;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.trend__place {
+    padding-right: 8px;
+    border-right: 1px solid #e1e1e1;
+}
+
+.trend__activity {
+    margin-left: 8px;
+}
+
+.trend__book {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trend__price {
+    color: #2d3134;
+    font-size: 2.4rem;
+    font-family: Inter;
+    font-weight: 700;
+}
+
+.trend__btn {
+    border-radius: 8px;
+    background: #31c3e0;
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: Inter;
+    font-weight: 500;
+    padding: 12px 16px;
+    outline: none;
+    border: 1px solid #31c3e0;
+}
+
+.trend__agency {
+    display: flex;
+    column-gap: 14px;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.trend__agency-logo {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+}
+
+.trend__agency-name {
+    color: #737979;
+    font-size: 1.6rem;
+    font-family: Inter;
+    font-weight: 500;
+}
