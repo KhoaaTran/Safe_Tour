@@ -729,3 +729,53 @@ button {
     font-weight: 500;
     line-height: 1.5;
 }
+
+/* Type */
+.type {
+    margin-top: 140px;
+}
+
+.type__heading {
+    text-align: center;
+}
+
+.type__list {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 60px;
+}
+
+.type__item {
+    flex: 1;
+    padding: 44px 40px;
+    border-radius: 12px;
+    border: 2px solid var(--stock, #ececec);
+    background: var(--white, #fff);
+    text-align: center;
+}
+
+.type__item-icon {
+    font-size: 4rem;
+    color: #FF7B29;
+}
+
+.type__item-heading {
+    margin-top: 28px;
+    color: #2d3134;
+    font-size: 2.6rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.type__item-desc {
+    margin-top: 18px;
+    color: #676a6c;
+    font-size: 1.4rem;
+    font-family: Inter;
+    line-height: 1;
+}
+
+.type__item-price {
+    color: #ff7b29;
+}
