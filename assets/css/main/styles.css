@@ -446,3 +446,44 @@ button {
     font-family: Inter;
     line-height: 1.42;
 }
+
+/* Why */
+.why {
+    margin-top: 140px;
+}
+
+.why__inner {
+    padding: 0 80px;
+    display: flex;
+    column-gap: 140px;
+}
+
+.why__img {
+    width: 38%;
+}
+
+.why__desc {
+    margin-top: 16px;
+}
+
+.why__item {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.why__item-heading {
+    color: #2d3134;
+    font-size: 1.6rem;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 1.625;
+}
+
+.why__item-desc {
+    color: #676a6c;
+    font-size: 1.4rem;
+    font-family: Inter;
+    line-height: 1.42;
+}
