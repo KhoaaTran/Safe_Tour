@@ -90,12 +90,273 @@
             content="./assets/favicon/ms-icon-144x144.png"
         />
         <meta name="theme-color" content="#ffffff" />
-
-        <!-- Styles -->
+        <!-- FontAwsome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Reset.css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Styles.css -->
         <link rel="stylesheet" href="./assets/css/main/styles.css" />
         <!-- Responsive -->
         <link rel="stylesheet" href="./assets/css/main/responsive.css" />
         <title>Safe Tour</title>
     </head>
-    <body></body>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <a href="#">
+                        <img src="./assets/icons/Logo.svg" alt="Safe Tour." />
+                    </a>
+
+                    <nav class="nav">
+                        <ul class="navbar">
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Home</a>
+                            </li>
+
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">About</a>
+                            </li>
+
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link"
+                                    >Destinations</a
+                                >
+                            </li>
+
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Blog</a>
+                            </li>
+
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Pages</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <a href="#!" class="btn btn__contact">Contact us</a>
+                </div>
+
+                <section class="hero">
+                    <div class="hero__top">
+                        <section class="hero__left">
+                            <h1 class="hero__heading">
+                                Let's Make Your Best Trip Ever
+                            </h1>
+
+                            <p class="hero__desc">
+                                Plan and book your perfect trip with expert
+                                advice, travel tips, destination information and
+                                inspiration from us.
+                            </p>
+
+                            <div class="hero__cta">
+                                <a href="#!" class="btn btn__hero"
+                                    >Discover Now</a
+                                >
+
+                                <button class="hero__play">
+                                    <img
+                                        src="./assets/icons/Play.svg"
+                                        alt=""
+                                        class="hero__play-icon"
+                                    />
+                                    <span class="hero__cta-desc"
+                                        >Learn More</span
+                                    >
+                                </button>
+                            </div>
+                        </section>
+
+                        <div class="hero__center">
+                            <figure class="hero__img-wrap">
+                                <img
+                                    src="./assets/images/Girl.png"
+                                    alt=""
+                                    class="hero__img"
+                                />
+                                <img
+                                    src="./assets/images/hero_decor_1.png"
+                                    alt=""
+                                    class="hero__img--decor"
+                                />
+                            </figure>
+
+                            <article class="hero__param">
+                                <div class="hero__circle">
+                                    <img
+                                        src="./assets/icons/hero_circle.svg"
+                                        alt=""
+                                        class="hero__circle-icon"
+                                    />
+
+                                    <div class="hero__circle-info">
+                                        <span class="hero__number">39</span>
+                                        <span class="hero__times"
+                                            >Times traveled</span
+                                        >
+                                    </div>
+                                </div>
+
+                                <div class="hero__param-monthly">
+                                    <span class="hero__param-number">224</span>
+                                    <span class="hero__param-trip"
+                                        >Total trip (month)</span
+                                    >
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="hero__right">
+                            <div class="hero__item">
+                                <i
+                                    class="fa-solid fa-calendar-check hero__item-icon"
+                                ></i>
+                                <div class="hero__item-info">
+                                    <span class="hero__item-info--hightlight"
+                                        >12</span
+                                    >
+                                    <span class="hero__item-info--desc"
+                                        >Years Experiences</span
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="hero__item">
+                                <i
+                                    class="fa-solid fa-award hero__item-icon"
+                                ></i>
+                                <div class="hero__item-info">
+                                    <span class="hero__item-info--hightlight"
+                                        >29</span
+                                    >
+                                    <span class="hero__item-info--desc"
+                                        >Awards Gained</span
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="hero__item">
+                                <i
+                                    class="fa-solid fa-building hero__item-icon"
+                                ></i>
+                                <div class="hero__item-info">
+                                    <span class="hero__item-info--hightlight"
+                                        >725+</span
+                                    >
+                                    <span class="hero__item-info--desc"
+                                        >Property Build</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__bottom">
+                        <div class="hero__bottom-item">
+                            <label for="location" class="hero__bottom-desc"
+                                >Location</label
+                            >
+                            <select
+                                class="hero__bottom-select"
+                                name="location"
+                                id="location"
+                            >
+                                <option
+                                    class="hero__bottom-option"
+                                    value="Bali, Indonesia"
+                                >
+                                    Bali, Indonesia
+                                </option>
+                                <option
+                                    class="hero__bottom-option"
+                                    value="Maldives"
+                                >
+                                    Maldives
+                                </option>
+                                <option
+                                    class="hero__bottom-option"
+                                    value="Dubai"
+                                >
+                                    Dubai
+                                </option>
+                                <option
+                                    class="hero__bottom-option"
+                                    value="Morocco"
+                                >
+                                    Morocco
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="hero__bottom-item">
+                            <label for="location" class="hero__bottom-desc"
+                                >City</label
+                            >
+                            <select
+                                class="hero__bottom-select"
+                                name="city"
+                                id="city"
+                            >
+                                <option
+                                    class="hero__bottom-option"
+                                    value="Prambanan"
+                                >
+                                    Prambanan
+                                </option>
+                                <option
+                                    class="hero__bottom-option"
+                                    value="Maldives"
+                                >
+                                    Maldives
+                                </option>
+                                <option
+                                    class="hero__bottom-option"
+                                    value="Dubai"
+                                >
+                                    Dubai
+                                </option>
+                                <option
+                                    class="hero__bottom-option"
+                                    value="Morocco"
+                                >
+                                    Morocco
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="hero__bottom-item">
+                            <label for="location" class="hero__bottom-desc"
+                                >Guest</label
+                            >
+                            <select
+                                class="hero__bottom-select"
+                                name="Guest"
+                                id="Guest"
+                            >
+                                <option value="8 Persons">8 Persons</option>
+                                <option value="7 Persons">7 Persons</option>
+                                <option value="6 Persons">6 Persons</option>
+                                <option value="5 Persons">5 Persons</option>
+                                <option value="4 Persons">4 Persons</option>
+                            </select>
+                        </div>
+
+                        <button class="hero__search">
+                            <i
+                                class="fa-solid fa-magnifying-glass hero__search-icon"
+                            ></i>
+                            <span class="hero__search-desc">Search</span>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </header>
+    </body>
 </html>
