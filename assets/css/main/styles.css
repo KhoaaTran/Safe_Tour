@@ -973,3 +973,54 @@ button {
 .guild__right .guild__time {
     margin-top: auto;
 }
+
+/* Subcribe */
+.subcribe {
+    margin-top: 184px;
+}
+
+.subcribe__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    background: #e8c400;
+    padding: 70px 0;
+}
+
+.subcribe__heading,
+.subcribe__desc {
+    color: #fff;
+}
+
+.subcribe__email {
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    width: 450px;
+}
+
+.subcribe__form {
+    position: relative;
+    margin-top: 41px;
+}
+
+.subcribe__btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: #f66f4d;
+    border: 1px solid #f66f4d;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.subcribe__icon {
+    color: #fff;
+}
