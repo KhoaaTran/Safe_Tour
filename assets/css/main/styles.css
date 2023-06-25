@@ -1024,3 +1024,71 @@ button {
 .subcribe__icon {
     color: #fff;
 }
+
+/* Footer */
+.footer {
+    margin-top: 140px;
+    padding-bottom: 50px;
+}
+
+.footer__top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(210, 208, 192, 0.21);
+}
+
+.footer__heading {
+    color: #020000;
+    font-size: 1.6rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 23px;
+}
+
+.footer__link {
+    color: #676a6c;
+    font-size: 1.2rem;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 3.16;
+}
+
+.footer__desc {
+    color: #676a6c;
+    font-size: 1.4rem;
+    font-family: Inter;
+    line-height: 1.85;
+}
+
+.footer__email {
+    margin-top: 40px;
+    color: #31c3e0;
+    font-size: 1.6rem;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.footer__social {
+    display: flex;
+    column-gap: 16px;
+}
+
+.footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #F5F5F5;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
