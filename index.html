@@ -100,6 +100,8 @@
         />
         <!-- Reset.css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Common.css -->
+        <link rel="stylesheet" href="./assets/css/common.css" />
         <!-- Styles.css -->
         <link rel="stylesheet" href="./assets/css/main/styles.css" />
         <!-- Responsive -->
@@ -109,41 +111,73 @@
     <body>
         <header class="header">
             <div class="container">
-                <div class="header__top">
+                <nav class="header__top">
                     <a href="#">
                         <img src="./assets/icons/Logo.svg" alt="Safe Tour." />
                     </a>
 
-                    <nav class="nav">
-                        <ul class="navbar">
-                            <li class="navbar__item">
-                                <a href="#!" class="navbar__link">Home</a>
-                            </li>
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
 
-                            <li class="navbar__item">
-                                <a href="#!" class="navbar__link">About</a>
-                            </li>
+                    <ul id="navbar" class="navbar show-on-pc">
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Home</a>
+                        </li>
 
-                            <li class="navbar__item">
-                                <a href="#!" class="navbar__link"
-                                    >Destinations</a
-                                >
-                            </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">About</a>
+                        </li>
 
-                            <li class="navbar__item">
-                                <a href="#!" class="navbar__link">Blog</a>
-                            </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Destinations</a>
+                        </li>
 
-                            <li class="navbar__item">
-                                <a href="#!" class="navbar__link">Pages</a>
-                            </li>
-                        </ul>
-                    </nav>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Blog</a>
+                        </li>
 
-                    <a href="#!" class="btn__contact">Contact us</a>
-                </div>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">Pages</a>
+                        </li>
+                    </ul>
 
-                <section class="hero">
+                    <a href="#!" class="btn__contact show-on-pc">Contact us</a>
+                </nav>
+            </div>
+        </header>
+
+        <header class="mobile-header hide-on-pc">
+            <input hidden type="checkbox" name="" id="menu-checkbox" class="menu-checkbox"/>
+
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <div class="menu-drawer">
+                <a href="#">
+                    <img src="./assets/icons/Logo.svg" alt="Safe Tour." />
+                </a>
+
+                <ul class="mobile-nav" id="mobile-nav"></ul>
+
+                <script>
+                    const pcNav = document.querySelector("#navbar");
+                    const mobileNav = document.querySelector("#mobile-nav");
+                    mobileNav.innerHTML = pcNav.innerHTML;
+                </script>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
                     <div class="hero__top">
                         <section class="hero__left">
                             <h1 class="hero__heading">
@@ -213,7 +247,7 @@
                             </article>
                         </div>
 
-                        <div class="hero__right">
+                        <div class="hero__right show-on-pc">
                             <div class="hero__item">
                                 <i
                                     class="fa-solid fa-calendar-check hero__item-icon"
@@ -355,10 +389,9 @@
                             <span class="hero__search-desc">Search</span>
                         </button>
                     </div>
-                </section>
-            </div>
-        </header>
-        <main>
+                </div>
+            </section>
+
             <section class="best">
                 <div class="container">
                     <div class="best__inner">
@@ -499,7 +532,7 @@
                         <img
                             src="./assets/images/why.png"
                             alt=""
-                            class="why__img"
+                            class="why__img show-on-pc"
                         />
 
                         <section class="why__body">
@@ -1006,7 +1039,7 @@
                                                 in seeking new
                                             </h3>
                                         </a>
-                                        <p class="guild__time">Jun 1, 2021</p>
+                                        <p class="guild__time show-on-pc">Jun 1, 2021</p>
                                     </div>
                                     <p
                                         class="guild__overview guild__overview--big"
@@ -1015,6 +1048,8 @@
                                         offices you minuter. At by asked being
                                         court hopes.
                                     </p>
+
+                                    <p class="guild__time hide-on-pc">Jun 1, 2021</p>
                                 </div>
                             </article>
                         </div>
@@ -1096,7 +1131,7 @@
                 </div>
             </section>
 
-            <section class="subcribe">
+            <section class="subcribe show-on-pc">
                 <div class="container">
                     <div class="subcribe__inner">
                         <h2 class="subcribe__heading section-heading">
@@ -1254,15 +1289,21 @@
 
                     <div class="footer__social">
                         <a href="#!" class="footer__btn">
-                            <i class="footer__icon fa-fw fa-brands fa-facebook-f"></i>
+                            <i
+                                class="footer__icon fa-fw fa-brands fa-facebook-f"
+                            ></i>
                         </a>
 
                         <a href="#!" class="footer__btn">
-                            <i class="footer__icon fa-fw fa-brands fa-instagram"></i>
+                            <i
+                                class="footer__icon fa-fw fa-brands fa-instagram"
+                            ></i>
                         </a>
 
                         <a href="#!" class="footer__btn">
-                            <i class="footer__icon fa-fw fa-brands fa-twitter"></i>
+                            <i
+                                class="footer__icon fa-fw fa-brands fa-twitter"
+                            ></i>
                         </a>
                     </div>
                 </div>
